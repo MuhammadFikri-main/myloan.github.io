@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Loan Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Mortgage Loan Calculator</h1>
+    </header>
+    <div class="container">
+        <div class="navbar">
+            <h4>MFikri</h4>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Profile</a></li>
+                        <li><a href="calculator.html">Calculator</a></li>
+                    </ul>
+                </nav>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <div class="content">
+                    <form id="form" action="" method="post">
+                        <h4>Loan Details</h4>
+                        <!-- Input fields -->
+                        <div class="contentFlex">
+                            <div class="contentLeft">
+                                <div class="content-item">
+                                <p>Loan Amount</p>
+                                <input type="number" id="loanAmount" placeholder="Loan Amount">
+                                <p>Interest Rate</p>
+                                <input type="number" id="interestRate" placeholder="Interest Rate">
+                                <p>Loan Term</p>
+                                <input type="number" id="loanTerm" placeholder="Loan Term">
+                                <p>Down Payment</p>
+                                <input type="number" id="downPayment" placeholder="Down Payment">
+                            </div>
+                            </div>
+                            <div class="contentRight">
+                                <div class="content-item">
+                                <p>Property Tax Rate</p>
+                                <input type="number" id="propertyTaxRate" placeholder="Property Tax Rate">
+                                <p>Home Owners Insurance</p>
+                                <input type="number" id="homeownersInsurance" placeholder="Home Owners Insurance">
+                                <p>Private Mortage Insurance</p>
+                                <input type="number" id="pmi" placeholder="Private Mortage Insurance">
+                                <p>Extra Payment</p>
+                                <input type="number" id="extraPayment" placeholder="Extra Payment">
+                            </div>
+                            </div>
+                        </div>
+                        <input type="submit" class="btn" id="btnSubmitTesting" value="Calculate" onclick="calculateMortgage()">
+                        <input type="button" class="btnClear" value="Clear" onclick="clearForm()">
+                    </form>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="content">
+                    <div class="contentFlex">
+                        <div class="contentLeft">
+                            <div class="content-item">
+                                <p>Monthly Mortgage Payment <br /><span id="monthlyPayment"></span></p>
+                            </div>
+                            <div class="content-item">
+                                <p>Total Repayment Amount <br /><span id="totalRepayment"></span></p>
+                            </div>
+                            <div class="content-item">
+                                <p>Total Interest Paid <br /><span id="totalInterestPaid"></span></p>
+                            </div>
+                        </div>
+                        <div class="contentRight">
+                            <div class="content-item">
+                                <p>Loan Amount After DownPayment <br /><span id="loanAmountAfterDownPayment"></span></p>
+                            </div>
+                            <div class="content-item">
+                                <p>Property Tax Payment <br /><span id="propertyTaxPayment"></span></p>
+                            </div>
+                            <div class="content-item">
+                                <p>Total Monthly Payment <br /><span id="totalMonthlyPayment"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>Copyright &copy; <i>Muhammad Fikri</i> 2023 | All rights reserved</p>
+</footer>
+
+</body>
+</html>
